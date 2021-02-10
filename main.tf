@@ -52,7 +52,7 @@ resource "aws_security_group" "hashicat" {
     from_port       = 0
     to_port         = 0
     protocol        = "-1"
-    cidr_blocks     = ["80.49.43.80/32"]
+    cidr_blocks     = ["0.0.0.0/0"]
     prefix_list_ids = []
   }
 
