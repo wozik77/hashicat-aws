@@ -78,6 +78,7 @@ resource "aws_route_table" "hashicat" {
   vpc_id = aws_vpc.hashicat.id
 
   route {
+    cidr_blocks = "172.16.0.0/16"
     gateway_id = aws_internet_gateway.hashicat.id
   }
 }
